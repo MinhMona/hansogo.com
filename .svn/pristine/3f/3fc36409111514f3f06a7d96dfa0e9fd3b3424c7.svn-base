@@ -1,0 +1,245 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FaloShipMaster.master.cs" Inherits="NHST.FaloShipMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="/App_Themes/FaShip/js/WOW-master/animate.css" />
+    <link rel="stylesheet" href="/App_Themes/FaShip/js/Magnific-Popup-master/magnific-popup.css" />
+    <link rel="stylesheet" href="/App_Themes/FaShip/js/Font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/App_Themes/FaShip/js/ms-Dropdown-master/css/msdropdown/dd.css">
+    <link rel="stylesheet" href="/App_Themes/FaShip/js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/App_Themes/FaShip/css/style.css" />
+    <title> FaloShip </title>
+     <script src="/App_Themes/FaShip/js/jquery-3.4.1.min.js"></script>
+    <link href="/App_Themes/NewUI/js/sweet/sweet-alert.css" rel="stylesheet" />
+    <asp:Literal runat="server" ID="ltrHeader"></asp:Literal>
+    <asp:Literal ID="ltrSEO" runat="server"></asp:Literal>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Literal ID="ltr_infor" runat="server"></asp:Literal>
+        <%--header--%>
+     <header>
+        <div class="header">
+            <div class="header-top">
+                <div class="container isner">
+                    <div class="header-top-left">
+                     
+                        <asp:Literal runat="server" ID="ltrTygia"></asp:Literal>
+                         <asp:Literal runat="server" ID="ltrEmail"></asp:Literal>
+                    </div>
+                    <div class="header-top-right">
+                        <ul class="list-social">
+                            <asp:Literal runat="server" ID="ltrSocial"></asp:Literal>
+                        </ul>
+                        <div class="user-box">
+                           <asp:Literal runat="server" ID="ltrLogin"></asp:Literal>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container isner">
+                    <div class="main-logo">
+                        <a href="/">
+                           <asp:Literal runat="server" ID="ltrLogo"></asp:Literal>
+                        </a>
+                    </div>
+                    <div class="main-menu">
+                        <ul class="main-menu-nav">
+                            <asp:Literal runat="server" ID="ltrMenu"></asp:Literal>
+                        </ul>
+                        <div class="main-menu-overlay"></div>
+                    </div>
+                    <div class="hamburger-btn main-menu-btn">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <%--footer--%>
+       <footer class="footer">
+        <div class="table-footer">
+            <div class="container">
+                <div class="columns">
+                    <div class="colum">
+                        <div class="content-ft">
+                            <div class="logo-ft">
+                                <a href="/">
+                                     <asp:Literal runat="server" ID="ltrLogoFT"></asp:Literal>
+                                </a>
+                            </div>
+                            <p class="desc">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="content-ft">
+                            <h5 class="title">
+                                Liên hệ
+                            </h5>
+                            <ul class="list-ft">
+                                <li>
+                                       <asp:Literal runat="server" ID="ltrDiachi"></asp:Literal>
+                                </li>
+                                <li>
+                                      <asp:Literal runat="server" ID="ltrEmailFT"></asp:Literal>
+                                </li>
+                                <li>
+                                    <asp:Literal runat="server" ID="ltrHotlineFT"></asp:Literal>
+                                </li>
+                                <li>
+                                    <a href="/"><span class="font-bold-1">Website:</span> HANSOGO.COM</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="content-ft padd-l-50">
+                            <h5 class="title">
+                                Menu
+                            </h5>
+                            <ul class="list-ft">
+                                <li>
+                                    <a href="/" class="hover-li">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/gioi-thieu" class="hover-li">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/tin-tuc" class="hover-li">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/huong-dan" class="hover-li">Hướng dẫn</a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/chinh-sach" class="hover-li">Chính sách</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="content-ft">
+                            <h5 class="title">
+                                Mạng xã hội
+                            </h5>
+                            <ul class="list-ft-social">
+                               <asp:Literal runat="server" ID="ltrSocialFT"></asp:Literal>
+                            </ul>
+                            <div class="box-fanpage">
+                                <div class="box-img">
+                                   <div class="fb-page" data-href="https://www.facebook.com/FaloshipHN" data-tabs="timeline" data-width="270" data-height="187" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/FaloshipHN" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FaloshipHN">FaloShip - Mua hộ - Đấu giá &amp; Vận chuyển hàng Nhật Bản</a></blockquote></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            © Copyright Faloship  
+        </div>
+    </footer>
+    <div class="m-backtotop" aria-hidden="true">
+        <div class="arrow">
+            <i class="fa fa-caret-up" aria-hidden="true"></i>
+        </div>
+        <div class="text">
+            Back to top
+        </div>
+    </div>
+   
+    <script src="/App_Themes/FaShip/js/WOW-master/wow.min.js"></script>
+    <script src="/App_Themes/FaShip/js/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
+    <script src="/App_Themes/FaShip/js/ms-Dropdown-master/js/msdropdown/jquery.dd.min.js"></script>
+    <script src="/App_Themes/FaShip/js/main.js"></script>
+    <script src="/App_Themes/FaShip/js/swiper/swiper-bundle.min.js"></script>
+    <script>
+        new WOW().init();
+        $("#brand-source").msDropdown();
+    </script>
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="9r5s9hrm"></script>
+        <script>
+            new WOW().init();
+            function isEmpty(str) {
+                return !str.replace(/^\s+/g, '').length; // boolean (`true` if field is empty)
+            }
+            function closewebinfo() {
+                $.ajax({
+                    type: "POST",
+                    url: "/Default.aspx/closewebinfo",
+                    //data: "{ID:'" + id + "',UserName:'" + username + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                        if (msg.d == "ok") {
+                            $(".webinfo").remove();
+                        }
+                    },
+                    error: function (xmlhttprequest, textstatus, errorthrow) {
+                        alert('lỗi');
+                    }
+                });
+            }
+        </script>
+        <style>
+            .btn-fixed-social .icon-dt {
+                width: 70px;
+                height: 70px;
+                display: block;
+                position: absolute;
+                bottom: 62px;
+                right: -6px;
+            }
+
+            .btn-fixed-social .icon-zalo {
+                width: 60px;
+                height: 60px;
+                display: block;
+            }
+
+            .btn-fixed-social {
+                position: fixed;
+                bottom: 86px;
+                right: 20px;
+            }
+
+            .scroll-top-link {
+                position: fixed;
+                right: 19px;
+                bottom: 222px;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                line-height: 38px;
+                font-size: 24px;
+                font-weight: bold;
+                padding: 6px;
+                text-align: center;
+                background-color: #cfd4dd;
+                border: rgba(41, 170, 225, 0.5) 5px solid;
+            }
+        </style>
+    </form>
+</body>
+</html>
+

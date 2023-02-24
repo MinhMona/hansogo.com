@@ -1,0 +1,314 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HansogoMaster.master.cs" Inherits="NHST.HansogoMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="/App_Themes/HSG/js/WOW-master/animate.css" />
+    <link rel="stylesheet" href="/App_Themes/HSG/js/Magnific-Popup-master/magnific-popup.css" />
+    <link rel="stylesheet" href="/App_Themes/HSG/js/Font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/App_Themes/HSG/js/ms-Dropdown-master/css/msdropdown/dd.css">
+    <link rel="stylesheet" href="/App_Themes/HSG/js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/App_Themes/HSG/css/style.css" />
+    <title> Hansogo - Trang chủ </title>
+    <script src="/App_Themes/HSG/js/jquery-3.4.1.min.js"></script>
+
+    <link href="App_Themes/NewUI/js/sweet/sweet-alert.css" rel="stylesheet" />
+    <asp:Literal runat="server" ID="ltrHeader"></asp:Literal>
+    <asp:Literal ID="ltrSEO" runat="server"></asp:Literal>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Literal ID="ltr_infor" runat="server"></asp:Literal>
+        <%--header--%>
+       <header>
+        <div class="header-main">
+            <!-- <div class="container"> -->
+                <div class="all">
+                    <div class="left">
+                        <div class="tygia">
+                            <%--<p> Tỷ giá: 1¥ = 220 VNĐ </p>--%>
+                               <asp:Literal runat="server" ID="ltrTyGia"></asp:Literal>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="social-media">
+                            <ul>
+                                  <asp:Literal runat="server" ID="ltrSocial"></asp:Literal>
+                                <%--<li>
+                                    <a href="">
+                                        <img src="/App_Themes/HSG/images/icon-fb-black.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="/App_Themes/HSG/images/icon-ytb-black.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="/App_Themes/HSG/images/icon-tiktok.png" alt="">
+                                    </a>
+                                </li>--%>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="operation">
+                            <div class="user-box">
+                              
+                                <asp:Literal runat="server" ID="ltrLogin"></asp:Literal>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <%--footer--%>
+       <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="all-footer">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="box-foot">
+                                <div class="logo-ft">
+                                    <a href="/">
+                                        <%--<img src="/App_Themes/HSG/images/logo-main.png" alt="">--%>
+                                        <asp:Literal runat="server" ID="ltrLogo"></asp:Literal>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="box-foot">
+                                <div class="title-foot">
+                                    <h4> Thông tin liên hệ </h4>
+                                </div>
+                                <div class="content-foot">
+                                    <p> <b> Công ty Cổ phần HAN Sogo </b> </p>
+                                    <p> <b> Hà Nội: </b> Số 15 Dãy B tổ 60, Tam Trinh 
+                                       <br> P. Hoàng Văn Thụ, Q. Hoàng Mai, Hà Nội </p>
+                                    <p> <b> Nhật Bản: </b> 大阪府大阪市東淀川区西淡路 <br>
+                                        <span> 1-13-20 Chateau Build 504 </span>
+                                    </p>
+                                    <p> <b> Email: </b> <a href="mailto:hanqsogo@gmail.com"> hanqsogo@gmail.com </a> </p>
+                                    <p> <b> Hotline: </b> (NB) (+81)90-6573-3003 
+                                        <br>
+                                        <span style="margin-left: 80px;"> (VN) (+84)34-936-0790 </span>
+                                    </p>
+                                    <p> <b> Website: </b> <a href="hansogo.com"> hansogo.com </a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="box-foot ">
+                                <div class="title-foot">
+                                    <h4> Về chúng tôi </h4>
+                                </div>
+                                <div class="content-foot">
+                                    <ul>
+                                        <li>
+                                            <a href="/chuyen-muc/gioi-thieu"> Giới thiệu </a>
+                                        </li>
+                                        <li>
+                                            <a href="/chuyen-muc/chinh-sach"> Chính sách bảo mật </a>
+                                        </li>
+                                        <li>
+                                            <a href="/chuyen-muc/dich-vu"> Điều khoản dịch vụ </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="social-link  mt-cus">
+                                    <!-- <p> <b> Mạng xã hội </b> </p> -->
+                                    <ul >
+                                         <asp:Literal runat="server" ID="ltrSocialFT"></asp:Literal>
+                                       <%-- <li>
+                                            <a href="">
+                                                <img src="/App_Themes/HSG/images/icon-fb-black - Copy.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="/App_Themes/HSG/images/icon-ytb-black.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="/App_Themes/HSG/images/icon-tiktok.png" alt="">
+                                            </a>
+                                        </li>--%>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="box-foot">
+                                <div class="title-foot">
+                                    <h4> Hỗ trợ khách hàng </h4>
+                                </div>
+                                <div class="content-foot">
+                                    <ul>
+                                        <li>
+                                            <a href="/chuyen-muc/bang-gia"> Bảng phí dịch vụ - Quy trình </a>
+                                        </li>
+                                        <li>
+                                            <a href="/chuyen-muc/huong-dan"> Hướng dẫn mua hàng </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Kinh nghiệm </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Câu hỏi thường gặp </a>
+                                        </li>
+                                        <li>
+                                            <a href="/chuyen-muc/chinh-sach"> Chính sách bồi thường </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cap-hansogo">
+                <p> <span>  HAN  </span>  SoGo </p>
+            </div>
+        </div>
+    </footer>
+ <%--   <div class="mess-icon-demo">
+        <a href="">
+            <img src="/App_Themes/HSG/images/mess-icon.png" alt="">
+        </a>
+    </div>--%>
+    <div class="m-backtotop" aria-hidden="true">
+        <div class="arrow">
+            <i class="fa fa-caret-up" aria-hidden="true"></i>
+        </div>
+        <div class="text">
+            Back to top
+        </div>
+    </div>
+    <script src="/App_Themes/HSG/js/WOW-master/wow.min.js"></script>
+    <script src="/App_Themes/HSG/js/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
+    <script src="/App_Themes/HSG/js/ms-Dropdown-master/js/msdropdown/jquery.dd.min.js"></script>
+    <script src="/App_Themes/HSG/js/main.js"></script>
+    <script src="/App_Themes/HSG/js/swiper/swiper-bundle.min.js"></script>
+    <script>
+        new WOW().init();
+        $("#brand-source").msDropdown();
+    </script>
+
+
+        <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "102233022033905");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+        <script>
+            new WOW().init();
+            function isEmpty(str) {
+                return !str.replace(/^\s+/g, '').length; // boolean (`true` if field is empty)
+            }
+            function closewebinfo() {
+                $.ajax({
+                    type: "POST",
+                    url: "/Default.aspx/closewebinfo",
+                    //data: "{ID:'" + id + "',UserName:'" + username + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                        if (msg.d == "ok") {
+                            $(".webinfo").remove();
+                        }
+                    },
+                    error: function (xmlhttprequest, textstatus, errorthrow) {
+                        alert('lỗi');
+                    }
+                });
+            }
+        </script>
+        <style>
+            .btn-fixed-social .icon-dt {
+                width: 70px;
+                height: 70px;
+                display: block;
+                position: absolute;
+                bottom: 62px;
+                right: -6px;
+            }
+
+            .btn-fixed-social .icon-zalo {
+                width: 60px;
+                height: 60px;
+                display: block;
+            }
+
+            .btn-fixed-social {
+                position: fixed;
+                bottom: 86px;
+                right: 20px;
+            }
+
+            .scroll-top-link {
+                position: fixed;
+                right: 19px;
+                bottom: 222px;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                line-height: 38px;
+                font-size: 24px;
+                font-weight: bold;
+                padding: 6px;
+                text-align: center;
+                background-color: #cfd4dd;
+                border: rgba(41, 170, 225, 0.5) 5px solid;
+            }
+        </style>
+    </form>
+</body>
+</html>
+
